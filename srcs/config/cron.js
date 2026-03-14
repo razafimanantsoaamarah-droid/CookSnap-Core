@@ -1,6 +1,5 @@
 import cron from 'node-cron';
 import https from 'https';
-import { error } from 'console';
 
 const job = new cron.CronJob("*/14 * * * *", function() {
   https
